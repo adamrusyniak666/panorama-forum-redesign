@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { getAssetPath } from '@/lib/utils';
 
 export const About = () => {
   const ref = useRef(null);
@@ -57,7 +58,7 @@ export const About = () => {
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700"
-                style={{ backgroundImage: "url('/04.jpg')" }}
+                style={{ backgroundImage: `url('${getAssetPath('/04.jpg')}')` }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
             </motion.div>

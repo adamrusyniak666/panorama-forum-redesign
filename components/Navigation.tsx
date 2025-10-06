@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Facebook, Instagram, Mail } from 'lucide-react';
 import Image from 'next/image';
+import { getAssetPath } from '@/lib/utils';
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -69,7 +70,7 @@ export const Navigation = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Image src="/logo.png" alt="Panorama Forum" width={120} height={48} className="h-10 md:h-12 w-auto" />
+              <Image src={getAssetPath('/logo.png')} alt="Panorama Forum" width={120} height={48} className="h-10 md:h-12 w-auto" />
             </motion.a>
 
             {/* Desktop Navigation */}

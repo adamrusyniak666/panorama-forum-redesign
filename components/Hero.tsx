@@ -2,6 +2,7 @@
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { getAssetPath } from '@/lib/utils';
 
 export const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -28,7 +29,7 @@ export const Hero = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/panorama_krakowa-1-scaled.jpg')`,
+            backgroundImage: `url('${getAssetPath('/panorama_krakowa-1-scaled.jpg')}')`,
             filter: 'brightness(0.4)',
           }}
         />
@@ -80,7 +81,7 @@ export const Hero = () => {
           className="mb-6"
         >
           <motion.img
-            src="/logo.png"
+            src={getAssetPath('/logo.png')}
             alt="Panorama Forum Kraków"
             className="h-40 md:h-56 lg:h-64 mx-auto mb-4"
             initial={{ opacity: 0, scale: 0.8 }}

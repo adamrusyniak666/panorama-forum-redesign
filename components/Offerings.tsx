@@ -2,47 +2,49 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { getAssetPath } from '@/lib/utils';
 
 export const Offerings = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
 
+  // Offerings data with images
   const offerings = [
     {
       id: 1,
-      title: 'Fine Dining',
-      category: 'Codziennie',
-      image: '/images-1.jpeg'
+      title: 'Menu degustacyjne',
+      category: 'Restauracja',
+      image: getAssetPath('/images-1.jpeg')
     },
     {
       id: 2,
-      title: 'Events',
-      category: 'Imprezy',
-      image: '/images-4.jpeg'
+      title: 'Wesela',
+      category: 'Bankiety',
+      image: getAssetPath('/images-4.jpeg')
     },
     {
       id: 3,
-      title: 'Business',
+      title: 'Konferencje',
       category: 'Biznes',
-      image: '/images-5.jpeg'
+      image: getAssetPath('/images-5.jpeg')
     },
     {
       id: 4,
-      title: 'Royal Lounge',
-      category: 'Cygar Lounge',
-      image: '/royal.jpg'
+      title: 'Degustacja cygar',
+      category: 'Royal Cigar Lounge',
+      image: getAssetPath('/royal.jpg')
     },
     {
       id: 5,
-      title: 'Premium',
+      title: 'Imprezy firmowe',
       category: 'Wydarzenia',
-      image: '/images-6-1.jpeg'
+      image: getAssetPath('/images-6-1.jpeg')
     },
     {
       id: 6,
       title: 'Catering',
       category: 'Na zamówienie',
-      image: '/images-7-1.jpeg'
+      image: getAssetPath('/images-7-1.jpeg')
     }
   ];
 

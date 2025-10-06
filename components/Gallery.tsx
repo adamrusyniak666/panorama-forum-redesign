@@ -3,6 +3,7 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
 import { X } from 'lucide-react';
+import { getAssetPath } from '@/lib/utils';
 
 export const Gallery = () => {
   const ref = useRef(null);
@@ -11,14 +12,14 @@ export const Gallery = () => {
 
   // Real images from the original site
   const images = [
-    { id: 1, title: 'Panorama Krakowa', category: 'Widoki', src: '/panorama_krakowa-1-scaled.jpg' },
-    { id: 2, title: 'Wnętrze restauracji', category: 'Wnętrza', src: '/people_02-1024x1024.jpg' },
-    { id: 3, title: 'Dania', category: 'Kuchnia', src: '/MG_9045-scaled.jpg' },
-    { id: 4, title: 'Zachód słońca', category: 'Widoki', src: '/panorama_krakowa-1-scaled.jpg' },
-    { id: 5, title: 'Bar', category: 'Wnętrza', src: '/04.jpg' },
-    { id: 6, title: 'Impreza', category: 'Wydarzenia', src: '/MG_9047-819x1024.jpg' },
-    { id: 7, title: 'Wawel nocą', category: 'Widoki', src: '/IMG_4273-1024x768.jpg' },
-    { id: 8, title: 'Menu degustacyjne', category: 'Kuchnia', src: '/people_02-1024x1024.jpg' },
+    { id: 1, title: 'Panorama Krakowa', category: 'Widoki', src: getAssetPath('/panorama_krakowa-1-scaled.jpg') },
+    { id: 2, title: 'Wnętrze restauracji', category: 'Wnętrza', src: getAssetPath('/people_02-1024x1024.jpg') },
+    { id: 3, title: 'Dania', category: 'Kuchnia', src: getAssetPath('/MG_9045-scaled.jpg') },
+    { id: 4, title: 'Zachód słońca', category: 'Widoki', src: getAssetPath('/panorama_krakowa-1-scaled.jpg') },
+    { id: 5, title: 'Bar', category: 'Wnętrza', src: getAssetPath('/04.jpg') },
+    { id: 6, title: 'Impreza', category: 'Wydarzenia', src: getAssetPath('/MG_9047-819x1024.jpg') },
+    { id: 7, title: 'Wawel nocą', category: 'Widoki', src: getAssetPath('/IMG_4273-1024x768.jpg') },
+    { id: 8, title: 'Menu degustacyjne', category: 'Kuchnia', src: getAssetPath('/people_02-1024x1024.jpg') },
   ];
 
   return (
