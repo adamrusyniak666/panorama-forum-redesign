@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Panorama Forum Kraków - Ultra Nowoczesna Strona Restauracji
 
-## Getting Started
+## 🌟 Opis
 
-First, run the development server:
+Ultra nowoczesna, ultra sleek strona internetowa dla Panorama Forum Kraków - ekskluzywnej restauracji na dachu legendarnego Hotelu Forum. Strona została zaprojektowana w stylu 2026 z wykorzystaniem najnowocześniejszych technologii webowych.
+
+## ✨ Funkcje
+
+### 🎨 Design 2026
+- **Glassmorphism** - efekty szkła i rozmazania
+- **Kinetic Typography** - dynamiczna typografia
+- **Micro-interactions** - płynne animacje przy każdej interakcji
+- **Parallax Scrolling** - wielowarstwowy efekt głębi
+- **Gradient Animations** - animowane gradienty złote
+- **3D Transforms** - przestrzenne transformacje elementów
+
+### 🚀 Technologie
+- **Next.js 15** - najnowsza wersja frameworka React
+- **TypeScript** - typowanie statyczne
+- **Tailwind CSS 4** - nowoczesny CSS utility-first
+- **Framer Motion** - zaawansowane animacje
+- **GSAP** - timeline animations (gotowe do użycia)
+- **React Three Fiber** - 3D grafika (gotowe do użycia)
+- **Swiper** - zaawansowane slidery
+
+### 📱 Sekcje Strony
+
+1. **Hero Section** - Dynamiczny header z image background i floating particles
+2. **About Section** - Historia Forum z animowanymi kartami
+3. **Offerings Section** - Oferta restauracji z 6 kategoriami usług
+4. **Gallery Section** - Interaktywna galeria zdjęć z lightbox
+5. **Testimonials Section** - Opinie klientów
+6. **Contact Section** - Formularz kontaktowy i informacje
+7. **Footer** - Kompletna stopka z social media
+
+## 🚀 Uruchomienie
+
+### Instalacja
+
+```bash
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Otwórz [http://localhost:3000](http://localhost:3000) w przeglądarce.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 🎨 Paleta Kolorów
 
-To learn more about Next.js, take a look at the following resources:
+- **Czarny**: `#0a0a0a` - Główne tło
+- **Złoty**: `#d4af37` - Akcent premium
+- **Złoty Jasny**: `#f4d03f` - Hover states
+- **Złoty Ciemny**: `#b8962c` - Shadows
+- **Biały**: `#ffffff` - Tekst
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 Social Media
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Facebook: [ForumPanorama](https://www.facebook.com/ForumPanorama/)
+- Instagram: [@forumpanorama](https://www.instagram.com/forumpanorama/)
+- Email: info@forumpanorama.pl
+- Telefon: 572 036 584
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Made with ❤️ and cutting-edge tech for Panorama Forum Kraków**
