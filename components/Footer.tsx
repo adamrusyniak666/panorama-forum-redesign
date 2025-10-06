@@ -31,7 +31,7 @@ export const Footer = () => {
           <div className="grid grid-cols-2 gap-8">
             <div className="space-y-4">
               <div className="text-gold/40 text-xs uppercase tracking-[0.3em] font-light mb-6">Menu</div>
-              {['Strona główna', 'O nas', 'Menu', 'Galeria', 'Kontakt'].map((link, i) => (
+              {['Strona główna', 'O nas', 'Menu', 'Galeria', 'Kontakt'].map((link) => (
                 <motion.a
                   key={link}
                   href={`#${link.toLowerCase().replace(' ', '-')}`}
